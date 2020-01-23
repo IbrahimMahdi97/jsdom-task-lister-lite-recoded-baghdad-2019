@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const newTaskUl = document.getElementById("tasks");
 
   newTaskForm.addEventListener("submit", createNewTask);
-  
+
   let input = document.querySelector("#new-task-description");
 
 });
@@ -17,6 +17,7 @@ const createNewTask = event => {
 
   const newTaskDescription = document.getElementById("new-task-description");
   const newTask = document.createElement("li");
+
   newTask.innerText = newTaskDescription.value;
   appendNewTask(newTask);
   event.target.reset();
